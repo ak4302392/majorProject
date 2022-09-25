@@ -1,12 +1,12 @@
 const Club = (props) => {
   return (
-    <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div class="max-w-sm  bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
-        <img class="rounded-t-lg w-full" src={props.image} alt="" />
+        <img class="rounded-t-lg oject-cover h-40 w-full " src={props.image} alt="" />
       </a>
-      <div class="p-5">
+      <div class="p-5  ">
         <a href="#">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
             {props.title}
           </h5>
         </a>
@@ -14,7 +14,7 @@ const Club = (props) => {
           {props.details}
         </p>
         <a
-          href="#"
+          href="/clubs/explore"
           class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
         >
           Explore
@@ -34,9 +34,10 @@ const Club = (props) => {
         </a>
 
         <a
-          href="#"
-          class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-gray-600 rounded-md shadow hover:bg-gray-800 float-right"
+          href="/clubs/register"
+          class="fixedt bottom-0 inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-gray-600 rounded-md shadow hover:bg-gray-800 float-right"
         >
+        
           Register
         </a>
       </div>

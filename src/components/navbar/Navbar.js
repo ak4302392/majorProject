@@ -57,16 +57,16 @@ export default function Navbar() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-gray-700 hover:text-indigo-200">
-                <a href="javascript:void(0)">Home</a>
+                <a href="/">Home</a>
               </li>
               <li className="text-gray-700 hover:text-indigo-200">
-                <a href="javascript:void(0)">Clubs</a>
+                <a href="/clubs">Clubs</a>
               </li>
               <li className="text-gray-700 hover:text-indigo-200">
-                <a href="javascript:void(0)">Events</a>
+                <a href="/events">Events</a>
               </li>
               <li className="text-gray-700 hover:text-indigo-200">
-                <a href="javascript:void(0)">About Us</a>
+                <a href="/about">About Us</a>
               </li>
             </ul>
 
@@ -88,13 +88,13 @@ export default function Navbar() {
         </div>
         <div className="hidden space-x-2 md:inline-block">
           <a
-            href="javascript:void(0)"
+            href="/login"
             className="px-4 py-2 text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
           >
             Sign in
           </a>
           <a
-            href="javascript:void(0)"
+            href="/signup"
             className="px-4 py-2 text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
           >
             Sign up
