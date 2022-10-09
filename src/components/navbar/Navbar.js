@@ -4,12 +4,17 @@ export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full text-lg  bg-white shadow">
+    <nav className="w-full text-lg  bg-white shadow ">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <a href="javascript:void(0)">
-              <h2 className="text-2xl font-bold text-lg text-gray-700">LOGO</h2>
+            <a href="/">
+              <div class="flex flex-row">
+              <img src={require("../../../src/images/manit_logo.png")} alt="logo" class="h-14 w-14"></img>
+                <h2 className="pl-3 text-2xl font-bold text-lg text-gray-700 flex items-center">
+                  LOGO
+                </h2>
+              </div>
             </a>
             <div className="md:hidden">
               <button
@@ -70,15 +75,15 @@ export default function Navbar() {
               </li>
             </ul>
 
-            <div className="mt-3 space-y-2 lg:hidden md:inline-block">
+            <div className="mt-3 space-y-2 lg:hidden md:hidden">
               <a
-                href="javascript:void(0)"
+                href="/login"
                 className="inline-block w-full px-4 py-2 text-center text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
               >
                 Sign in
               </a>
               <a
-                href="javascript:void(0)"
+                href="/signup"
                 className="inline-block w-full px-4 py-2 text-center text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
               >
                 Sign up
